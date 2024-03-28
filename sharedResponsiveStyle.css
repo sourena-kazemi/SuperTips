@@ -1,0 +1,58 @@
+@media screen and (min-width: 640px) {
+  .nav-links {
+    gap: 2rem;
+  }
+  .nav-link-hidden-small-screen {
+    display: inline;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    margin-inline: 1.5rem;
+  }
+  .nav-link-hidden-large-screen {
+    display: inline;
+  }
+  .nav-menu-button {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .navbar {
+    margin-inline: 2rem;
+    font-size: 1.2rem;
+  }
+  .nav-links,
+  .nav-button {
+    margin-top: 5px;
+  }
+  .nav-links {
+    gap: 4rem;
+  }
+  .nav-icon-title {
+    font-size: 1.5rem;
+  }
+  .nav-link-auth {
+    display: none;
+  }
+  .nav-button {
+    display: block;
+  }
+  .nav-auth-button {
+    color: var(--primaryColor);
+    border: 3px solid var(--primaryColor);
+    border-radius: 20px;
+    padding-inline: 2rem;
+    padding-block: 0.2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .navbar {
+    margin-inline: 2.5rem;
+    margin-top: 1.5rem;
+  }
+  .nav-signUp-button {
+    padding-inline: 3rem;
+    padding-block: 0.3rem;
+  }
+}
