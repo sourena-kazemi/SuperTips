@@ -7,8 +7,8 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .navbar {
-    margin-inline: 1.5rem;
+  :root {
+    --inlineMargin: 1.5rem;
   }
   .nav-link-hidden-large-screen {
     display: inline;
@@ -18,8 +18,10 @@
   }
 }
 @media screen and (min-width: 1024px) {
+  :root {
+    --inlineMargin: 2rem;
+  }
   .navbar {
-    margin-inline: 2rem;
     font-size: 1.2rem;
   }
   .nav-links,
@@ -47,8 +49,10 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  :root {
+    --inlineMargin: 2.5rem;
+  }
   .navbar {
-    margin-inline: 2.5rem;
     margin-top: 1.5rem;
   }
   .nav-signUp-button {

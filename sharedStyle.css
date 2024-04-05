@@ -5,6 +5,7 @@
   --backgroundColor: #45367e;
   --primaryColor: #efc738;
   --secondaryColor: #c2b6f1;
+  --inlineMargin: 1rem;
 }
 * {
   margin: 0;
@@ -25,7 +26,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-inline: 1rem;
+  margin-inline: var(--inlineMargin);
   margin-top: 1rem;
 }
 .nav-icon {
@@ -46,7 +47,7 @@ html {
   align-items: center;
 }
 .nav-link-selected {
-  text-decoration: underline;
+  color: var(--secondaryColor);
 }
 .nav-link-hidden-large-screen,
 .nav-link-hidden-small-screen {
