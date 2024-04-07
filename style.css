@@ -23,6 +23,7 @@ header {
 .dropdown {
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
 }
 .dropdown-header {
   display: flex;
@@ -31,8 +32,85 @@ header {
   margin-top: 2rem;
 }
 .dropdown-title {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+}
+.dropdown-button {
+  width: 70px;
+}
+.dropdown-open .dropdown-button {
+  transform: rotate(180deg);
 }
 .dropdown-text {
   display: none;
+  margin-top: 1rem;
+  color: var(--secondaryColor);
+}
+.dropdown-open .dropdown-text {
+  display: block;
+}
+.pricing-section {
+  margin-inline: var(--inlineMargin);
+  margin-top: 4rem;
+}
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 3px var(--textColor);
+  border-radius: 20px;
+  padding-block: 2rem;
+  padding-inline: 1rem;
+  margin-top: 2rem;
+  max-width: 450px;
+  margin-inline: auto;
+}
+.card-title {
+  font-size: 1.5rem;
+}
+.card-price {
+  margin-top: 1rem;
+  color: var(--primaryColor);
+  font-size: 1.2rem;
+}
+.card-price span {
+  color: var(--primaryColor);
+  font-size: 1rem;
+}
+.card-divider {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    transparent 20%,
+    rgba(194, 182, 241, 0.5) 50%,
+    transparent 80%
+  );
+}
+.card-items {
+  margin-top: 1rem;
+}
+.card-item {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.card-button {
+  display: inline-block;
+  margin-top: 2rem;
+  color: var(--primaryColor);
+  border: solid 3px var(--primaryColor);
+  width: 100%;
+  padding-block: 0.6rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.card-button-special {
+  color: var(--textColor);
+  border: none;
+  background-color: var(--primaryColor);
+}
+.text-underline {
+  text-decoration: underline;
 }

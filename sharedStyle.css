@@ -17,7 +17,6 @@
   text-decoration: none;
 }
 html {
-  height: 100%;
   width: 100%;
   background-image: var(--backgroundGradient);
   background-repeat: no-repeat;
