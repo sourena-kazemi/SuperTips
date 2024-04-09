@@ -21,7 +21,7 @@ html {
   background-image: var(--backgroundGradient);
   background-repeat: no-repeat;
 }
-.navbar {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
