@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="sharedStyle.css" />
     <link rel="stylesheet" href="sharedResponsiveStyle.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsiveStyle.css" />
     <title>SuperTips - Enhance your sport betting using AI</title>
   </head>
   <body>
@@ -50,18 +51,25 @@
       </div>
     </nav>
     <header>
-      <div class="title-section">
-        <h1 class="title">Enhance your sports betting using the power of AI</h1>
-        <a href="#" class="title-button">Check out our plans!</a>
+      <div class="hero-section">
+        <div class="title-section">
+          <h1 class="title">
+            Enhance your sports betting using the power of AI
+          </h1>
+          <a href="#" class="title-button">Check out our plans!</a>
+        </div>
+        <img
+          src="./Assets/illustration1.svg"
+          alt="illustration of man working with a computer"
+          class="header-main-image"
+        />
       </div>
-      <img
-        src="./Assets/illustration1.svg"
-        alt="illustration of man working with a computer"
-        class="header-main-image"
-      />
       <div class="header-dropdowns">
-        <div class="dropdown dropdown-first">
-          <div class="dropdown-header">
+        <div class="dropdown dropdown-first dropdown-open">
+          <div
+            class="dropdown-header"
+            onclick="handleDropdownClick('dropdown-first')"
+          >
             <h2 class="dropdown-title">
               Advanced statistics and probability calculations
             </h2>
@@ -69,7 +77,6 @@
               src="./Assets/chevron-down.svg"
               alt="dropdown arrow button"
               class="dropdown-button"
-              onclick="handleDropdownClick('dropdown-first')"
             />
           </div>
           <p class="dropdown-text">
@@ -78,7 +85,10 @@
           </p>
         </div>
         <div class="dropdown dropdown-second">
-          <div class="dropdown-header">
+          <div
+            class="dropdown-header"
+            onclick="handleDropdownClick('dropdown-second')"
+          >
             <h2 class="dropdown-title">
               Community driven decisions and development
             </h2>
@@ -86,7 +96,6 @@
               src="./Assets/chevron-down.svg"
               alt="dropdown arrow button"
               class="dropdown-button"
-              onclick="handleDropdownClick('dropdown-second')"
             />
           </div>
           <p class="dropdown-text">
