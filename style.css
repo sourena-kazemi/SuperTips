@@ -23,6 +23,12 @@ header {
   margin-top: 2rem;
   margin-inline: auto;
 }
+.image-hidden-small-screen {
+  display: none;
+}
+.header-infos {
+  display: none;
+}
 .header-dropdowns {
   margin-top: 2rem;
 }
@@ -202,6 +208,7 @@ footer {
   text-align: center;
   color: var(--secondaryColor);
   margin-top: 1rem;
+  margin-bottom: 0.5rem;
   font-weight: 500;
 }
 .copyright-text-hidden-small-screen {
