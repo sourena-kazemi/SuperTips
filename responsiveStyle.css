@@ -45,6 +45,15 @@
   }
 }
 @media screen and (min-width: 1024px) {
+  .title {
+    font-size: 3rem;
+  }
+  .dropdown-title {
+    font-size: 2rem;
+  }
+  .dropdown-text {
+    font-size: 1.2rem;
+  }
   .footer-container {
     flex-direction: row;
     margin-bottom: 1rem;
@@ -78,14 +87,11 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    /* position: relative; */
   }
   .header-main-image {
-    /* position: absolute;
-    bottom: -10%;
-    left: 50%;
-    translate: -50%; */
-    align-self: flex-end;
+    margin-inline: auto;
+    margin-top: -10%;
+    max-width: 33%;
   }
   .header-infos {
     display: flex;
@@ -108,5 +114,6 @@
   }
   .pricing-card {
     margin-inline: 0;
+    padding-inline: 2rem;
   }
 }
