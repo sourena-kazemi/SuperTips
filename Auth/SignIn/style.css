@@ -3,3 +3,74 @@
   border: none;
   padding: none;
 }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  margin-inline: var(--inlineMargin);
+}
+label {
+  font-size: 1.2rem;
+}
+.input-box {
+  margin-top: 2rem;
+  width: 100%;
+}
+.input {
+  width: 100%;
+  margin-top: 1rem;
+  padding-inline: 1rem;
+  padding-block: 0.7rem;
+  border-radius: 20px;
+  background: none;
+  border: 3px solid var(--secondaryColor);
+}
+.input::placeholder {
+  color: var(--secondaryColor);
+  font-size: 1rem;
+}
+.password-input {
+  position: relative;
+  margin-top: 1rem;
+}
+.password-input .input {
+  margin-top: 0;
+}
+.input-icon {
+  width: 30px;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  translate: 0 -50%;
+}
+.form-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+/* .checkbox {
+  
+} */
+.checkbox-text {
+  font-size: 1rem;
+}
+.forgot-password-button {
+  text-decoration: underline;
+}
+.signIn-button {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: var(--primaryColor);
+  padding-block: 0.5rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+}
+.signUp-page-link {
+  display: block;
+  margin-top: 2rem;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  align-self: flex-start;
+}

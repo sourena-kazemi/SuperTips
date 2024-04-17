@@ -15,9 +15,12 @@
   font-family: "Inter", sans-serif;
   font-weight: bold;
   text-decoration: none;
+  outline: none;
+  border: none;
 }
 html {
   width: 100%;
+  min-height: 100%;
   background-image: var(--backgroundGradient);
   background-repeat: no-repeat;
 }
