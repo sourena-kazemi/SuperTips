@@ -45,6 +45,65 @@
         <a href="../SignIn/" class="nav-auth-button">Sign in</a>
       </div>
     </nav>
+    <main>
+      <h1 class="title">Welcome to SuperTips!</h1>
+      <div class="input-box">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          placeholder="Your username"
+          id="username"
+          class="input"
+        />
+      </div>
+      <div class="input-box">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          placeholder="Your email"
+          id="email"
+          class="input"
+        />
+      </div>
+      <div class="input-box">
+        <label for="password">Password</label>
+        <div class="password-input">
+          <img
+            src="../../Assets/eye.svg"
+            alt="show password button"
+            class="input-icon"
+          />
+          <input
+            type="text"
+            placeholder="Your password"
+            id="password"
+            class="input"
+          />
+        </div>
+      <div class="input-box password-confirm-input">
+        <div class="password-input">
+          <img
+            src="../../Assets/eye.svg"
+            alt="show password button"
+            class="input-icon"
+          />
+          <input
+            type="text"
+            placeholder="Confirm password"
+            id="password"
+            class="input"
+          />
+        </div>
+      </div>
+      <div class="form-buttons">
+        <div class="form-checkbox">
+          <input type="checkbox" id="checkbox" class="checkbox" />
+          <label for="checkbox" class="checkbox-text">Creating an account means you agree with our <a href="#" class="terms-of-service-link">terms of service</a></label>
+        </div>
+      </div>
+      <button class="signUp-button">Sign up</button>
+      <a href="../SignIn/" class="signIn-page-link">Already a user?</a>
+    </main>
   </body>
   <script src="../../sharedScript.js"></script>
 </html>

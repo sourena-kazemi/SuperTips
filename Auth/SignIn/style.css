@@ -8,7 +8,9 @@ main {
   flex-direction: column;
   align-items: center;
   margin-top: 4rem;
-  margin-inline: var(--inlineMargin);
+  margin-inline: auto;
+  padding-inline: var(--inlineMargin);
+  max-width: 500px;
 }
 label {
   font-size: 1.2rem;
@@ -26,9 +28,15 @@ label {
   background: none;
   border: 3px solid var(--secondaryColor);
 }
+.input:focus {
+  border-color: var(--textColor);
+}
 .input::placeholder {
   color: var(--secondaryColor);
   font-size: 1rem;
+}
+.input:focus::placeholder {
+  color: var(--textColor);
 }
 .password-input {
   position: relative;
@@ -48,11 +56,25 @@ label {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
   margin-top: 2rem;
 }
-/* .checkbox {
-  
-} */
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.checkbox {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: solid 3px var(--secondaryColor);
+  border-radius: 10px;
+}
+.checkbox:checked {
+  background-color: var(--secondaryColor);
+  border: double 5px var(--textColor);
+}
 .checkbox-text {
   font-size: 1rem;
 }
@@ -73,4 +95,17 @@ label {
   text-decoration: underline;
   font-size: 1.2rem;
   align-self: flex-start;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    margin-top: 6rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  main {
+    min-width: 500px;
+    max-width: 33%;
+    margin-top: 8rem;
+  }
 }
