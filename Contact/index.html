@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../sharedStyle.css" />
     <link rel="stylesheet" href="../sharedResponsiveStyle.css" />
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get in touch with us - SuperTips</title>
   </head>
@@ -46,6 +47,54 @@
         <a href="../Auth/SignUp/" class="nav-auth-button">Sign up</a>
       </div>
     </nav>
+    <main>
+      <div class="contact-texts">
+        <h1 class="title">Contact us</h1>
+        <p class="text">
+          Email, call, or complete the form to get in touch with us
+        </p>
+        <div class="socials">
+          <p class="social-text">info@supertips.com</p>
+          <p class="social text">231-321-213</p>
+          <div class="social-icons">
+            <img src="../Assets/meta.svg" alt="meta" class="social-icon" />
+            <img
+              src="../Assets/twitter.svg"
+              alt="twitter"
+              class="social-icon"
+            />
+            <img
+              src="../Assets/linkedIn.svg"
+              alt="linkedIn"
+              class="social-icon"
+            />
+            <img
+              src="../Assets/instagram.svg"
+              alt="instagram"
+              class="social-icon"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <div class="input-box name-input-box">
+          <label for="name">Full name</label>
+          <div>
+            <input type="text" id="name" placeholder="First name" />
+            <input type="text" placeholder="Last name" />
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Your email" />
+        </div>
+        <div class="input-box">
+          <label for="description">Description</label>
+          <textarea id="description" placeholder="How can we help?"></textarea>
+        </div>
+        <button>Submit</button>
+      </div>
+    </main>
   </body>
   <script src="../sharedScript.js"></script>
 </html>

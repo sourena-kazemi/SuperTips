@@ -1,0 +1,78 @@
+main {
+  margin-inline: auto;
+  padding-inline: var(--inlineMargin);
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.text {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.socials {
+  margin-top: 2rem;
+}
+.social-text {
+  margin-top: 1rem;
+}
+.social-icons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.social-icon {
+  width: 30px;
+}
+.contact-form {
+  margin-top: 2rem;
+}
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.name-input-box div {
+  display: flex;
+  gap: 0.5rem;
+}
+label {
+  margin-bottom: 1rem;
+}
+input {
+  width: 100%;
+  padding-inline: 1rem;
+  padding-block: 0.7rem;
+  border-radius: 20px;
+  background: none;
+  border: 3px solid var(--secondaryColor);
+}
+textarea {
+  padding-inline: 1rem;
+  padding-block: 0.7rem;
+  height: 200px;
+  border-radius: 20px;
+  background: none;
+  border: 3px solid var(--secondaryColor);
+}
+input:focus,
+textarea:focus {
+  border-color: var(--textColor);
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--secondaryColor);
+  font-size: 1rem;
+}
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: var(--textColor);
+}
+button {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: var(--primaryColor);
+  padding-block: 0.5rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+}
