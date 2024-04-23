@@ -1,0 +1,81 @@
+.user-profile-picture {
+  width: 40px;
+  height: 40px;
+  background-color: var(--textColor);
+  border-radius: 100%;
+}
+.user-profile-small-screen-menu {
+  width: 75px;
+  height: 75px;
+}
+.sidebar {
+  margin-top: 2rem;
+  margin-inline: var(--inlineMargin);
+}
+.sidebar-filter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 30;
+  position: relative;
+}
+.filter-icon {
+  width: 30px;
+}
+.selected-sport {
+  font-size: 1.2rem;
+}
+.selected-league {
+  font-size: 1rem;
+  color: var(--secondaryColor);
+  margin-top: 0.5rem;
+}
+.sidebar-menu {
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+  margin-inline: var(--inlineMargin);
+  gap: 2rem;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: all 0.3s ease;
+  z-index: 20;
+}
+.sidebar-menu-active {
+  display: flex;
+  left: 0;
+}
+.sport-dropdown:first-of-type {
+  margin-top: 10rem;
+}
+.sport-dropdown-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.sport-title {
+  font-size: 1.2rem;
+}
+.sport-leagues {
+  margin-top: 1rem;
+}
+li {
+  list-style: none;
+  color: var(--secondaryColor);
+  margin-top: 1rem;
+}
+@media screen and (min-width: 1024px) {
+  .user-profile-hidden-large-screen {
+    display: none;
+  }
+  .user-profile-hidden-small-screen {
+    display: block;
+  }
+  .user-profile-picture {
+    width: 50px;
+    height: 50px;
+  }
+}

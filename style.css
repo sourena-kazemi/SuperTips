@@ -2,9 +2,6 @@ header {
   margin-inline: var(--inlineMargin);
   margin-top: 4rem;
 }
-.title-section {
-  max-width: 40%;
-}
 .title {
   line-height: 1.3;
 }

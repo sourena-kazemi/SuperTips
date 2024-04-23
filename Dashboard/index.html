@@ -4,11 +4,113 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../sharedStyle.css" />
     <link rel="stylesheet" href="../sharedResponsiveStyle.css" />
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard - SuperTips</title>
   </head>
-  <body>
-    Dashboard
-  </body>
+  <nav>
+    <div class="nav-icon">
+      <img
+        src="../Assets/logo.svg"
+        alt="SuperTips Logo"
+        class="nav-icon-image"
+      />
+      <p class="nav-icon-title">SuperTips</p>
+    </div>
+    <div class="nav-links">
+      <a href="../" class="nav-link nav-link-hidden-large-screen">Home</a>
+      <a href="../Contact/" class="nav-link nav-link-hidden-small-screen"
+        >Contact</a
+      >
+      <a
+        href="./"
+        class="nav-link nav-link-selected nav-link-hidden-small-screen"
+        >Dashboard</a
+      >
+      <a href="../Profile/  " class="nav-link nav-link-hidden-large-screen"
+        >Profile</a
+      >
+      <a href="../Profile/" class="user-profile-hidden-large-screen">
+        <img
+          src="../Assets/profilePic1.svg"
+          alt="profile picture"
+          class="user-profile-picture"
+        />
+      </a>
+      <div class="nav-menu-button" onclick="handleMenuButtonClick()">
+        <div class="nav-menu-button-line"></div>
+        <div class="nav-menu-button-line"></div>
+        <div class="nav-menu-button-line"></div>
+      </div>
+      <div class="nav-menu">
+        <a href="../Profile/">
+          <img
+            src="../Assets/profilePic1.svg"
+            alt="profile picture"
+            class="user-profile-picture user-profile-small-screen-menu"
+          />
+        </a>
+        <a href="../" class="nav-link">Home</a>
+        <a href="../Contact/" class="nav-link">Contact</a>
+        <a href="./" class="nav-link nav-link-selected">Dashboard</a>
+        <a href="../Profile/" class="nav-link">Profile</a>
+      </div>
+    </div>
+    <div class="nav-button">
+      <a href="../Profile/" class="user-profile-hidden-small-screen">
+        <img
+          src="../Assets/profilePic1.svg"
+          alt="profile picture"
+          class="user-profile-picture"
+        />
+      </a>
+    </div>
+  </nav>
+  <section class="sidebar">
+    <div class="sidebar-filter" onclick="handleChangeFilterButtonClick()">
+      <img
+        src="../Assets/setting.svg"
+        alt="change category button"
+        class="filter-icon"
+      />
+      <div class="selected-filter">
+        <p class="selected-sport">Soccer</p>
+        <p class="selected-league">FIFA Club World Cup</p>
+      </div>
+    </div>
+    <div class="sidebar-menu">
+      <div class="sport-dropdown">
+        <div class="sport-dropdown-header">
+          <p class="sport-title">Soccer</p>
+          <img src="../Assets/chevron-down.svg" alt="dropdown button" />
+        </div>
+        <ul class="sport-leagues">
+          <li class="sport-leage">Arab Club Champions Cup</li>
+          <li class="sport-leage">Arnold Clark Cup</li>
+          <li class="sport-leage">Club Friendlies</li>
+          <li class="sport-leage">FIFA Club World Cup</li>
+          <li class="sport-leage">FIFA Women’s World Cup</li>
+          <li class="sport-leage">FIFA World Cup</li>
+          <li class="sport-leage">Florida Cup</li>
+          <li class="sport-leage">Friendlies</li>
+          <li class="sport-leage">Intercontinental Cup</li>
+        </ul>
+      </div>
+      <div class="sport-dropdown">
+        <div class="sport-dropdown-header">
+          <p class="sport-title">Tennis</p>
+          <img src="../Assets/chevron-down.svg" alt="dropdown button" />
+        </div>
+        <ul class="sport-leagues">
+          <li class="sport-leage">Davis Cup (Men)</li>
+          <li class="sport-leage">Billie Jean King Cup (Women)</li>
+          <li class="sport-leage">Hopman Cup (Men/Women)</li>
+          <li class="sport-leage">Laver Cup (Men)</li>
+          <li class="sport-leage">United Cup (Men/Women)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
   <script src="../sharedScript.js"></script>
+  <script src="./index.js"></script>
 </html>

@@ -45,6 +45,9 @@
   }
 }
 @media screen and (min-width: 1024px) {
+  .title-section {
+    max-width: 40%;
+  }
   .title {
     font-size: 3rem;
   }
