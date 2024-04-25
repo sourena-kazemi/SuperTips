@@ -16,8 +16,8 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  z-index: 30;
   position: relative;
+  z-index: 15;
 }
 .filter-icon {
   width: 30px;
@@ -31,7 +31,6 @@
   margin-top: 0.5rem;
 }
 .sidebar-menu {
-  /* display: none; */
   display: flex;
   flex-direction: column;
   margin-inline: var(--inlineMargin);
@@ -42,7 +41,7 @@
   top: 0;
   left: -100%;
   transition: all 0.3s ease;
-  z-index: 20;
+  z-index: 10;
 }
 .sidebar-menu-active {
   display: flex;
@@ -56,11 +55,20 @@
   align-items: center;
   gap: 2rem;
 }
+.sport-dropdown-header img {
+  rotate: 180deg;
+}
 .sport-title {
   font-size: 1.2rem;
 }
 .sport-leagues {
   margin-top: 1rem;
+}
+.dropdown-open .sport-leagues {
+  display: none;
+}
+.dropdown-open .sport-dropdown-header img {
+  rotate: 0deg;
 }
 li {
   list-style: none;
