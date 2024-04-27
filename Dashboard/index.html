@@ -67,7 +67,7 @@
     </div>
   </nav>
   <section class="sidebar">
-    <div class="sidebar-filter" onclick="handleChangeFilterButtonClick()">
+    <div class="sidebar-filter" onclick="handleMenuButtonClick()">
       <img
         src="../Assets/setting.svg"
         alt="change category button"
@@ -88,15 +88,60 @@
           <img src="../Assets/chevron-down.svg" alt="dropdown button" />
         </div>
         <ul class="sport-leagues">
-          <li class="sport-leage">Arab Club Champions Cup</li>
-          <li class="sport-leage">Arnold Clark Cup</li>
-          <li class="sport-leage">Club Friendlies</li>
-          <li class="sport-leage">FIFA Club World Cup</li>
-          <li class="sport-leage">FIFA Women’s World Cup</li>
-          <li class="sport-leage">FIFA World Cup</li>
-          <li class="sport-leage">Florida Cup</li>
-          <li class="sport-leage">Friendlies</li>
-          <li class="sport-leage">Intercontinental Cup</li>
+          <li
+            class="sport-league soccer-league"
+            onclick="handleDropdownItemClick('soccer',1)"
+          >
+            Arab Club Champions Cup
+          </li>
+          <li
+            class="sport-league soccer-league"
+            onclick="handleDropdownItemClick('soccer',2)"
+          >
+            Arnold Clark Cup
+          </li>
+          <li
+            class="sport-league soccer-league"
+            onclick="handleDropdownItemClick('soccer',3)"
+          >
+            Club Friendlies
+          </li>
+          <li
+            class="sport-league soccer-league selected-item"
+            onclick="handleDropdownItemClick('soccer',4)"
+          >
+            FIFA Club World Cup
+          </li>
+          <li
+            class="sport-league soccer-league"
+            onclick="handleDropdownItemClick('soccer',5)"
+          >
+            FIFA Women’s World Cup
+          </li>
+          <li
+            class="sport-league soccer-league"
+            onclick="handleDropdownItemClick('soccer',6)"
+          >
+            FIFA World Cup
+          </li>
+          <li
+            class="sport-league soccer-league"
+            onclick="handleDropdownItemClick('soccer',7)"
+          >
+            Florida Cup
+          </li>
+          <li
+            class="sport-league soccer-league"
+            onclick="handleDropdownItemClick('soccer',8)"
+          >
+            Friendlies
+          </li>
+          <li
+            class="sport-league soccer-league"
+            onclick="handleDropdownItemClick('soccer',9)"
+          >
+            Intercontinental Cup
+          </li>
         </ul>
       </div>
       <div class="sport-dropdown tennis-dropdown">
@@ -108,11 +153,36 @@
           <img src="../Assets/chevron-down.svg" alt="dropdown button" />
         </div>
         <ul class="sport-leagues">
-          <li class="sport-leage">Davis Cup (Men)</li>
-          <li class="sport-leage">Billie Jean King Cup (Women)</li>
-          <li class="sport-leage">Hopman Cup (Men/Women)</li>
-          <li class="sport-leage">Laver Cup (Men)</li>
-          <li class="sport-leage">United Cup (Men/Women)</li>
+          <li
+            class="sport-league tennis-league"
+            onclick="handleDropdownItemClick('tennis',1)"
+          >
+            Davis Cup (Men)
+          </li>
+          <li
+            class="sport-league tennis-league"
+            onclick="handleDropdownItemClick('tennis',2)"
+          >
+            Billie Jean King Cup (Women)
+          </li>
+          <li
+            class="sport-league tennis-league"
+            onclick="handleDropdownItemClick('tennis',3)"
+          >
+            Hopman Cup (Men/Women)
+          </li>
+          <li
+            class="sport-league tennis-league"
+            onclick="handleDropdownItemClick('tennis',4)"
+          >
+            Laver Cup (Men)
+          </li>
+          <li
+            class="sport-league tennis-league"
+            onclick="handleDropdownItemClick('tennis',5)"
+          >
+            United Cup (Men/Women)
+          </li>
         </ul>
       </div>
     </div>
