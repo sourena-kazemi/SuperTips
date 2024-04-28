@@ -8,9 +8,9 @@
   width: 75px;
   height: 75px;
 }
-.sidebar {
-  margin-top: 2rem;
+main {
   margin-inline: var(--inlineMargin);
+  margin-top: 2rem;
 }
 .sidebar-filter {
   display: flex;
@@ -36,9 +36,10 @@
   margin-top: 0.5rem;
 }
 .sidebar-menu {
-  display: none;
+  display: flex;
   flex-direction: column;
-  margin-inline: var(--inlineMargin);
+  background-color: var(--backgroundColor);
+  padding-inline: var(--inlineMargin);
   gap: 2rem;
   height: 100%;
   width: 100%;
@@ -50,7 +51,6 @@
   z-index: 10;
 }
 .sidebar-menu-active {
-  display: flex;
   left: 0;
 }
 .sport-dropdown:first-of-type {
@@ -90,6 +90,95 @@ li {
   padding-inline: 0.5rem;
   padding-block: 0.2rem;
 }
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  column-gap: 3rem;
+  margin-top: 2rem;
+}
+.card {
+  background-color: var(--transparentBackgroundColor);
+  max-width: 400px;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  padding-inline: 3rem;
+  padding-block: 2rem;
+}
+.card-info {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 2rem;
+}
+.team-logo {
+  width: 60px;
+}
+.team-name {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  text-wrap: nowrap;
+}
+.match-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.info-hidden-small-screen {
+  display: none;
+}
+.match-scores {
+  font-size: 1.5rem;
+}
+.score-negative {
+  color: var(--warningColor);
+}
+.score-positive {
+  color: var(--successColor);
+}
+.match-time {
+  font-weight: 500;
+  text-wrap: nowrap;
+  margin-top: 0.5rem;
+}
+.card-buttons {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.card-button {
+  display: inline-block;
+  font-size: 1.2rem;
+  border: solid 3px var(--textColor);
+  border-radius: 10px;
+  padding-inline: 1rem;
+  padding-block: 0.2rem;
+}
+.button-special {
+  background-color: var(--primaryColor);
+  border-color: var(--primaryColor);
+}
+@media screen and (min-width: 640px) {
+  .info-hidden-large-screen {
+    display: none;
+  }
+  .info-hidden-small-screen {
+    display: flex;
+  }
+  .card-buttons {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   .user-profile-hidden-large-screen {
     display: none;
@@ -100,5 +189,28 @@ li {
   .user-profile-picture {
     width: 50px;
     height: 50px;
+  }
+  .sidebar-filter {
+    display: none;
+  }
+  main {
+    display: flex;
+    gap: 4rem;
+  }
+  .sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    padding-inline: 0;
+    gap: 2rem;
+    height: auto;
+    width: auto;
+    position: static;
+  }
+  .sport-dropdown:first-of-type {
+    margin-top: 0;
+  }
+  .cards {
+    margin-top: 0;
   }
 }

@@ -7,6 +7,8 @@
   --secondaryColor: #c2b6f1;
   --transparentBackgroundColor: rgba(194, 182, 241, 0.2);
   --inlineMargin: 1rem;
+  --warningColor: #ff6363;
+  --successColor: #63ff7c;
 }
 * {
   margin: 0;

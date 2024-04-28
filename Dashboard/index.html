@@ -66,127 +66,473 @@
       </a>
     </div>
   </nav>
-  <section class="sidebar">
-    <div class="sidebar-filter" onclick="handleMenuButtonClick()">
-      <img
-        src="../Assets/setting.svg"
-        alt="change category button"
-        class="filter-icon"
-      />
-      <div class="selected-filter">
-        <p class="selected-sport">Soccer</p>
-        <p class="selected-league">FIFA Club World Cup</p>
-      </div>
-    </div>
-    <div class="sidebar-menu">
-      <div class="sport-dropdown soccer-dropdown">
-        <div
-          class="sport-dropdown-header"
-          onclick="handleDropdownClick('soccer-dropdown')"
-        >
-          <p class="sport-title">Soccer</p>
-          <img src="../Assets/chevron-down.svg" alt="dropdown button" />
+  <main>
+    <section class="sidebar">
+      <div class="sidebar-filter" onclick="handleMenuButtonClick()">
+        <img
+          src="../Assets/setting.svg"
+          alt="change category button"
+          class="filter-icon"
+        />
+        <div class="selected-filter">
+          <p class="selected-sport">Soccer</p>
+          <p class="selected-league">FIFA Club World Cup</p>
         </div>
-        <ul class="sport-leagues">
-          <li
-            class="sport-league soccer-league"
-            onclick="handleDropdownItemClick('soccer',1)"
-          >
-            Arab Club Champions Cup
-          </li>
-          <li
-            class="sport-league soccer-league"
-            onclick="handleDropdownItemClick('soccer',2)"
-          >
-            Arnold Clark Cup
-          </li>
-          <li
-            class="sport-league soccer-league"
-            onclick="handleDropdownItemClick('soccer',3)"
-          >
-            Club Friendlies
-          </li>
-          <li
-            class="sport-league soccer-league selected-item"
-            onclick="handleDropdownItemClick('soccer',4)"
-          >
-            FIFA Club World Cup
-          </li>
-          <li
-            class="sport-league soccer-league"
-            onclick="handleDropdownItemClick('soccer',5)"
-          >
-            FIFA Women’s World Cup
-          </li>
-          <li
-            class="sport-league soccer-league"
-            onclick="handleDropdownItemClick('soccer',6)"
-          >
-            FIFA World Cup
-          </li>
-          <li
-            class="sport-league soccer-league"
-            onclick="handleDropdownItemClick('soccer',7)"
-          >
-            Florida Cup
-          </li>
-          <li
-            class="sport-league soccer-league"
-            onclick="handleDropdownItemClick('soccer',8)"
-          >
-            Friendlies
-          </li>
-          <li
-            class="sport-league soccer-league"
-            onclick="handleDropdownItemClick('soccer',9)"
-          >
-            Intercontinental Cup
-          </li>
-        </ul>
       </div>
-      <div class="sport-dropdown tennis-dropdown">
-        <div
-          class="sport-dropdown-header"
-          onclick="handleDropdownClick('tennis-dropdown')"
-        >
-          <p class="sport-title">Tennis</p>
-          <img src="../Assets/chevron-down.svg" alt="dropdown button" />
+      <div class="sidebar-menu">
+        <div class="sport-dropdown soccer-dropdown">
+          <div
+            class="sport-dropdown-header"
+            onclick="handleDropdownClick('soccer-dropdown')"
+          >
+            <p class="sport-title">Soccer</p>
+            <img src="../Assets/chevron-down.svg" alt="dropdown button" />
+          </div>
+          <ul class="sport-leagues">
+            <li
+              class="sport-league soccer-league"
+              onclick="handleDropdownItemClick('soccer',1)"
+            >
+              Arab Club Champions Cup
+            </li>
+            <li
+              class="sport-league soccer-league"
+              onclick="handleDropdownItemClick('soccer',2)"
+            >
+              Arnold Clark Cup
+            </li>
+            <li
+              class="sport-league soccer-league"
+              onclick="handleDropdownItemClick('soccer',3)"
+            >
+              Club Friendlies
+            </li>
+            <li
+              class="sport-league soccer-league selected-item"
+              onclick="handleDropdownItemClick('soccer',4)"
+            >
+              FIFA Club World Cup
+            </li>
+            <li
+              class="sport-league soccer-league"
+              onclick="handleDropdownItemClick('soccer',5)"
+            >
+              FIFA Women’s World Cup
+            </li>
+            <li
+              class="sport-league soccer-league"
+              onclick="handleDropdownItemClick('soccer',6)"
+            >
+              FIFA World Cup
+            </li>
+            <li
+              class="sport-league soccer-league"
+              onclick="handleDropdownItemClick('soccer',7)"
+            >
+              Florida Cup
+            </li>
+            <li
+              class="sport-league soccer-league"
+              onclick="handleDropdownItemClick('soccer',8)"
+            >
+              Friendlies
+            </li>
+            <li
+              class="sport-league soccer-league"
+              onclick="handleDropdownItemClick('soccer',9)"
+            >
+              Intercontinental Cup
+            </li>
+          </ul>
         </div>
-        <ul class="sport-leagues">
-          <li
-            class="sport-league tennis-league"
-            onclick="handleDropdownItemClick('tennis',1)"
+        <div class="sport-dropdown tennis-dropdown">
+          <div
+            class="sport-dropdown-header"
+            onclick="handleDropdownClick('tennis-dropdown')"
           >
-            Davis Cup (Men)
-          </li>
-          <li
-            class="sport-league tennis-league"
-            onclick="handleDropdownItemClick('tennis',2)"
-          >
-            Billie Jean King Cup (Women)
-          </li>
-          <li
-            class="sport-league tennis-league"
-            onclick="handleDropdownItemClick('tennis',3)"
-          >
-            Hopman Cup (Men/Women)
-          </li>
-          <li
-            class="sport-league tennis-league"
-            onclick="handleDropdownItemClick('tennis',4)"
-          >
-            Laver Cup (Men)
-          </li>
-          <li
-            class="sport-league tennis-league"
-            onclick="handleDropdownItemClick('tennis',5)"
-          >
-            United Cup (Men/Women)
-          </li>
-        </ul>
+            <p class="sport-title">Tennis</p>
+            <img src="../Assets/chevron-down.svg" alt="dropdown button" />
+          </div>
+          <ul class="sport-leagues">
+            <li
+              class="sport-league tennis-league"
+              onclick="handleDropdownItemClick('tennis',1)"
+            >
+              Davis Cup (Men)
+            </li>
+            <li
+              class="sport-league tennis-league"
+              onclick="handleDropdownItemClick('tennis',2)"
+            >
+              Billie Jean King Cup (Women)
+            </li>
+            <li
+              class="sport-league tennis-league"
+              onclick="handleDropdownItemClick('tennis',3)"
+            >
+              Hopman Cup (Men/Women)
+            </li>
+            <li
+              class="sport-league tennis-league"
+              onclick="handleDropdownItemClick('tennis',4)"
+            >
+              Laver Cup (Men)
+            </li>
+            <li
+              class="sport-league tennis-league"
+              onclick="handleDropdownItemClick('tennis',5)"
+            >
+              United Cup (Men/Women)
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <section class="cards">
+      <div class="card">
+        <div class="card-info">
+          <div class="team-info">
+            <img
+              src="../Assets/WestHam.svg"
+              alt="team logo"
+              class="team-logo"
+            />
+            <p class="team-name">West Ham</p>
+          </div>
+          <div class="match-info info-hidden-small-screen">
+            <p class="match-scores">
+              <span class="score score-negative">1.6</span> :
+              <span class="score score-positive">2.7</span>
+            </p>
+            <p class="match-time">12 Aug, 19:00</p>
+          </div>
+          <div class="team-info">
+            <img
+              src="../Assets/Chelsea.svg"
+              alt="team logo"
+              class="team-logo"
+            />
+            <p class="team-name">Chelsea</p>
+          </div>
+        </div>
+        <div class="match-info info-hidden-large-screen">
+          <p class="match-scores">
+            <span class="score score-negative">1.6</span> :
+            <span class="score score-positive">2.7</span>
+          </p>
+          <p class="match-time">12 Aug, 19:00</p>
+        </div>
+        <div class="card-buttons">
+          <a href="#" class="card-button">Analysis</a>
+          <a href="#" class="card-button button-special">View bets</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-info">
+          <div class="team-info">
+            <img
+              src="../Assets/WestHam.svg"
+              alt="team logo"
+              class="team-logo"
+            />
+            <p class="team-name">West Ham</p>
+          </div>
+          <div class="match-info info-hidden-small-screen">
+            <p class="match-scores">
+              <span class="score score-negative">1.6</span> :
+              <span class="score score-positive">2.7</span>
+            </p>
+            <p class="match-time">12 Aug, 19:00</p>
+          </div>
+          <div class="team-info">
+            <img
+              src="../Assets/Chelsea.svg"
+              alt="team logo"
+              class="team-logo"
+            />
+            <p class="team-name">Chelsea</p>
+          </div>
+        </div>
+        <div class="match-info info-hidden-large-screen">
+          <p class="match-scores">
+            <span class="score score-negative">1.6</span> :
+            <span class="score score-positive">2.7</span>
+          </p>
+          <p class="match-time">12 Aug, 19:00</p>
+        </div>
+        <div class="card-buttons">
+          <a href="#" class="card-button">Analysis</a>
+          <a href="#" class="card-button button-special">View bets</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-info">
+          <div class="team-info">
+            <img
+              src="../Assets/WestHam.svg"
+              alt="team logo"
+              class="team-logo"
+            />
+            <p class="team-name">West Ham</p>
+          </div>
+          <div class="match-info info-hidden-small-screen">
+            <p class="match-scores">
+              <span class="score score-negative">1.6</span> :
+              <span class="score score-positive">2.7</span>
+            </p>
+            <p class="match-time">12 Aug, 19:00</p>
+          </div>
+          <div class="team-info">
+            <img
+              src="../Assets/Chelsea.svg"
+              alt="team logo"
+              class="team-logo"
+            />
+            <p class="team-name">Chelsea</p>
+          </div>
+        </div>
+        <div class="match-info info-hidden-large-screen">
+          <p class="match-scores">
+            <span class="score score-negative">1.6</span> :
+            <span class="score score-positive">2.7</span>
+          </p>
+          <p class="match-time">12 Aug, 19:00</p>
+        </div>
+        <div class="card-buttons">
+          <a href="#" class="card-button">Analysis</a>
+          <a href="#" class="card-button button-special">View bets</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-info">
+          <div class="team-info">
+            <img
+              src="../Assets/WestHam.svg"
+              alt="team logo"
+              class="team-logo"
+            />
+            <p class="team-name">West Ham</p>
+          </div>
+          <div class="match-info info-hidden-small-screen">
+            <p class="match-scores">
+              <span class="score score-negative">1.6</span> :
+              <span class="score score-positive">2.7</span>
+            </p>
+            <p class="match-time">12 Aug, 19:00</p>
+          </div>
+          <div class="team-info">
+            <img
+              src="../Assets/Chelsea.svg"
+              alt="team logo"
+              class="team-logo"
+            />
+            <p class="team-name">Chelsea</p>
+          </div>
+        </div>
+        <div class="match-info info-hidden-large-screen">
+          <p class="match-scores">
+            <span class="score score-negative">1.6</span> :
+            <span class="score score-positive">2.7</span>
+          </p>
+          <p class="match-time">12 Aug, 19:00</p>
+        </div>
+        <div class="card-buttons">
+          <a href="#" class="card-button">Analysis</a>
+          <a href="#" class="card-button button-special">View bets</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-info">
+          <div class="team-info">
+            <img
+              src="../Assets/WestHam.svg"
+              alt="team logo"
+              class="team-logo"
+            />
+            <p class="team-name">West Ham</p>
+          </div>
+          <div class="match-info info-hidden-small-screen">
+            <p class="match-scores">
+              <span class="score score-negative">1.6</span> :
+              <span class="score score-positive">2.7</span>
+            </p>
+            <p class="match-time">12 Aug, 19:00</p>
+          </div>
+          <div class="team-info">
+            <img
+              src="../Assets/Chelsea.svg"
+              alt="team logo"
+              class="team-logo"
+            />
+            <p class="team-name">Chelsea</p>
+          </div>
+        </div>
+        <div class="match-info info-hidden-large-screen">
+          <p class="match-scores">
+            <span class="score score-negative">1.6</span> :
+            <span class="score score-positive">2.7</span>
+          </p>
+          <p class="match-time">12 Aug, 19:00</p>
+        </div>
+        <div class="card-buttons">
+          <a href="#" class="card-button">Analysis</a>
+          <a href="#" class="card-button button-special">View bets</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-info">
+          <div class="team-info">
+            <img
+              src="../Assets/WestHam.svg"
+              alt="team logo"
+              class="team-logo"
+            />
+            <p class="team-name">West Ham</p>
+          </div>
+          <div class="match-info info-hidden-small-screen">
+            <p class="match-scores">
+              <span class="score score-negative">1.6</span> :
+              <span class="score score-positive">2.7</span>
+            </p>
+            <p class="match-time">12 Aug, 19:00</p>
+          </div>
+          <div class="team-info">
+            <img
+              src="../Assets/Chelsea.svg"
+              alt="team logo"
+              class="team-logo"
+            />
+            <p class="team-name">Chelsea</p>
+          </div>
+        </div>
+        <div class="match-info info-hidden-large-screen">
+          <p class="match-scores">
+            <span class="score score-negative">1.6</span> :
+            <span class="score score-positive">2.7</span>
+          </p>
+          <p class="match-time">12 Aug, 19:00</p>
+        </div>
+        <div class="card-buttons">
+          <a href="#" class="card-button">Analysis</a>
+          <a href="#" class="card-button button-special">View bets</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-info">
+          <div class="team-info">
+            <img
+              src="../Assets/WestHam.svg"
+              alt="team logo"
+              class="team-logo"
+            />
+            <p class="team-name">West Ham</p>
+          </div>
+          <div class="match-info info-hidden-small-screen">
+            <p class="match-scores">
+              <span class="score score-negative">1.6</span> :
+              <span class="score score-positive">2.7</span>
+            </p>
+            <p class="match-time">12 Aug, 19:00</p>
+          </div>
+          <div class="team-info">
+            <img
+              src="../Assets/Chelsea.svg"
+              alt="team logo"
+              class="team-logo"
+            />
+            <p class="team-name">Chelsea</p>
+          </div>
+        </div>
+        <div class="match-info info-hidden-large-screen">
+          <p class="match-scores">
+            <span class="score score-negative">1.6</span> :
+            <span class="score score-positive">2.7</span>
+          </p>
+          <p class="match-time">12 Aug, 19:00</p>
+        </div>
+        <div class="card-buttons">
+          <a href="#" class="card-button">Analysis</a>
+          <a href="#" class="card-button button-special">View bets</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-info">
+          <div class="team-info">
+            <img
+              src="../Assets/WestHam.svg"
+              alt="team logo"
+              class="team-logo"
+            />
+            <p class="team-name">West Ham</p>
+          </div>
+          <div class="match-info info-hidden-small-screen">
+            <p class="match-scores">
+              <span class="score score-negative">1.6</span> :
+              <span class="score score-positive">2.7</span>
+            </p>
+            <p class="match-time">12 Aug, 19:00</p>
+          </div>
+          <div class="team-info">
+            <img
+              src="../Assets/Chelsea.svg"
+              alt="team logo"
+              class="team-logo"
+            />
+            <p class="team-name">Chelsea</p>
+          </div>
+        </div>
+        <div class="match-info info-hidden-large-screen">
+          <p class="match-scores">
+            <span class="score score-negative">1.6</span> :
+            <span class="score score-positive">2.7</span>
+          </p>
+          <p class="match-time">12 Aug, 19:00</p>
+        </div>
+        <div class="card-buttons">
+          <a href="#" class="card-button">Analysis</a>
+          <a href="#" class="card-button button-special">View bets</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-info">
+          <div class="team-info">
+            <img
+              src="../Assets/WestHam.svg"
+              alt="team logo"
+              class="team-logo"
+            />
+            <p class="team-name">West Ham</p>
+          </div>
+          <div class="match-info info-hidden-small-screen">
+            <p class="match-scores">
+              <span class="score score-negative">1.6</span> :
+              <span class="score score-positive">2.7</span>
+            </p>
+            <p class="match-time">12 Aug, 19:00</p>
+          </div>
+          <div class="team-info">
+            <img
+              src="../Assets/Chelsea.svg"
+              alt="team logo"
+              class="team-logo"
+            />
+            <p class="team-name">Chelsea</p>
+          </div>
+        </div>
+        <div class="match-info info-hidden-large-screen">
+          <p class="match-scores">
+            <span class="score score-negative">1.6</span> :
+            <span class="score score-positive">2.7</span>
+          </p>
+          <p class="match-time">12 Aug, 19:00</p>
+        </div>
+        <div class="card-buttons">
+          <a href="#" class="card-button">Analysis</a>
+          <a href="#" class="card-button button-special">View bets</a>
+        </div>
+      </div>
+    </section>
+  </main>
   <script src="../sharedScript.js"></script>
   <script src="./index.js"></script>
 </html>
