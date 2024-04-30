@@ -1,0 +1,91 @@
+.user-profile-picture {
+  width: 40px;
+  height: 40px;
+  background-color: var(--textColor);
+  border-radius: 100%;
+}
+.user-profile-small-screen-menu {
+  width: 75px;
+  height: 75px;
+}
+main {
+  margin-top: 2rem;
+  margin-inline: var(--inlineMargin);
+}
+.edit-info-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  padding-block: 2rem;
+  padding-inline: 1rem;
+  background-color: var(--transparentBackgroundColor);
+  border-radius: 20px;
+}
+.form-profile {
+  width: 60px;
+  height: 60px;
+  background-color: var(--textColor);
+  border-radius: 100%;
+}
+.username {
+  font-size: 1.5rem;
+  margin-top: 0.2rem;
+}
+.user-signUp-date {
+  margin-top: 0.2rem;
+  font-weight: 500;
+  color: var(--secondaryColor);
+}
+.user-signUp-date span {
+  font-weight: 500;
+  color: var(--textColor);
+}
+.inputs {
+  width: 100%;
+  margin-top: 1rem;
+}
+.input-box {
+  text-align: start;
+  margin-top: 1rem;
+}
+.input-box div {
+  position: relative;
+}
+.edit-button {
+  width: 30px;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  translate: 0 -50%;
+}
+.input {
+  width: 100%;
+  background: none;
+  border: 3px solid var(--secondaryColor);
+  border-radius: 20px;
+  padding-inline: 1rem;
+  padding-block: 0.7rem;
+  font-size: 1.2rem;
+}
+.input:focus {
+  border-color: var(--textColor);
+}
+@media screen and (min-width: 640px) {
+  .edit-info-form {
+    padding-inline: 3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .user-profile-hidden-large-screen {
+    display: none;
+  }
+  .user-profile-hidden-small-screen {
+    display: block;
+  }
+  .user-profile-picture {
+    width: 50px;
+    height: 50px;
+  }
+}

@@ -4,11 +4,140 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../sharedStyle.css" />
     <link rel="stylesheet" href="../sharedResponsiveStyle.css" />
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile - SuperTips</title>
   </head>
   <body>
-    Profile
+    <nav>
+      <div class="nav-icon">
+        <img
+          src="../Assets/logo.svg"
+          alt="SuperTips Logo"
+          class="nav-icon-image"
+        />
+        <p class="nav-icon-title">SuperTips</p>
+      </div>
+      <div class="nav-links">
+        <a href="../" class="nav-link nav-link-hidden-large-screen">Home</a>
+        <a href="../Contact/" class="nav-link nav-link-hidden-small-screen"
+          >Contact</a
+        >
+        <a href="../Dashboard/" class="nav-link nav-link-hidden-small-screen"
+          >Dashboard</a
+        >
+        <a
+          href="./  "
+          class="nav-link nav-link-selected nav-link-hidden-large-screen"
+          >Profile</a
+        >
+        <a href="./" class="user-profile-hidden-large-screen">
+          <img
+            src="../Assets/profilePic1.svg"
+            alt="profile picture"
+            class="user-profile-picture"
+          />
+        </a>
+        <div class="nav-menu-button" onclick="handleMenuButtonClick()">
+          <div class="nav-menu-button-line"></div>
+          <div class="nav-menu-button-line"></div>
+          <div class="nav-menu-button-line"></div>
+        </div>
+        <div class="nav-menu">
+          <a href="./">
+            <img
+              src="../Assets/profilePic1.svg"
+              alt="profile picture"
+              class="user-profile-picture user-profile-small-screen-menu"
+            />
+          </a>
+          <a href="../" class="nav-link">Home</a>
+          <a href="../Contact/" class="nav-link">Contact</a>
+          <a href="../Dashboard/" class="nav-link">Dashboard</a>
+          <a href="./" class="nav-link nav-link-selected">Profile</a>
+        </div>
+      </div>
+      <div class="nav-button">
+        <a href="./" class="user-profile-hidden-small-screen">
+          <img
+            src="../Assets/profilePic1.svg"
+            alt="profile picture"
+            class="user-profile-picture"
+          />
+        </a>
+      </div>
+    </nav>
+    <main>
+      <div class="edit-info-form">
+        <div class="user-info">
+          <img
+            src="../Assets/profilePic1.svg"
+            alt="your user profile"
+            class="form-profile"
+          />
+          <p class="username">John Doe</p>
+          <p class="user-signUp-date">
+            SuperTips user since : <span>Mar 21, 2022</span>
+          </p>
+        </div>
+        <div class="inputs">
+          <div class="input-box">
+            <label for="username">Username</label>
+            <div>
+              <img
+                src="../Assets/pencil.svg"
+                alt="edit info button"
+                class="edit-button"
+              />
+              <input type="text" id="username" value="John Doe" class="input" />
+            </div>
+          </div>
+          <div class="input-box">
+            <label for="email">Username</label>
+            <div>
+              <img
+                src="../Assets/pencil.svg"
+                alt="edit info button"
+                class="edit-button"
+              />
+              <input
+                type="email"
+                id="email"
+                value="John.Doe@gmail.com"
+                class="input"
+              />
+            </div>
+          </div>
+          <div class="input-box">
+            <label for="password">Username</label>
+            <div>
+              <img
+                src="../Assets/pencil.svg"
+                alt="edit info button"
+                class="edit-button"
+              />
+              <input
+                type="password"
+                id="password"
+                value="*********"
+                class="input"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="account-stats">
+          <p class="account-stat">
+            Your referral code : <span>X34MGR5TI</span>
+          </p>
+          <p class="account-stat">Registered referrals : <span>402</span></p>
+          <p class="account-stat">Estimated earnings : <span>$235</span></p>
+        </div>
+        <div class="form-buttons">
+          <button class="form-button logOut-button">Log out</button>
+          <button class="form-button">Request withdraw</button>
+        </div>
+      </div>
+    </main>
   </body>
   <script src="../sharedScript.js"></script>
 </html>
