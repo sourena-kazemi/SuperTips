@@ -9,6 +9,10 @@
   height: 75px;
 }
 main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
   margin-top: 2rem;
   margin-inline: var(--inlineMargin);
 }
@@ -17,7 +21,7 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 600px;
+  max-width: 500px;
   padding-block: 2rem;
   padding-inline: 1rem;
   background-color: var(--transparentBackgroundColor);
@@ -65,6 +69,7 @@ main {
   background: none;
   border: 3px solid var(--secondaryColor);
   border-radius: 20px;
+  margin-top: 0.5rem;
   padding-inline: 1rem;
   padding-block: 0.7rem;
   font-size: 1.2rem;
@@ -72,9 +77,130 @@ main {
 .input:focus {
   border-color: var(--textColor);
 }
+.account-stats {
+  margin-top: 1rem;
+  text-align: start;
+  margin-right: auto;
+}
+.account-stat {
+  margin-top: 1rem;
+  color: var(--secondaryColor);
+}
+.form-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.form-button {
+  background: none;
+  border: solid 3px var(--textColor);
+  border-radius: 10px;
+  padding-inline: 2rem;
+  padding-block: 0.2rem;
+  font-size: 1.2rem;
+}
+.logOut-button {
+  background-color: var(--warningColor);
+  border-color: var(--warningColor);
+}
+.bets-history-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  column-gap: 3rem;
+}
+.card {
+  background-color: var(--transparentBackgroundColor);
+  max-width: 400px;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  padding-inline: 3rem;
+  padding-block: 2rem;
+}
+.card-win {
+  border: 5px solid var(--successColor);
+}
+.card-lose {
+  border: 5px solid var(--warningColor);
+}
+.card-info {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 2rem;
+}
+.team-logo {
+  width: 60px;
+}
+.team-name {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  text-wrap: nowrap;
+}
+.match-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.info-hidden-small-screen {
+  display: none;
+}
+.match-scores {
+  font-size: 1.5rem;
+}
+.score-negative {
+  color: var(--warningColor);
+}
+.score-positive {
+  color: var(--successColor);
+}
+.match-time {
+  font-weight: 500;
+  text-wrap: nowrap;
+  margin-top: 0.5rem;
+}
+.card-buttons {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.card-button {
+  display: inline-block;
+  font-size: 1.2rem;
+  border: solid 3px var(--textColor);
+  border-radius: 10px;
+  padding-inline: 1rem;
+  padding-block: 0.2rem;
+}
+.button-special {
+  background-color: var(--primaryColor);
+  border-color: var(--primaryColor);
+}
+
 @media screen and (min-width: 640px) {
   .edit-info-form {
     padding-inline: 3rem;
+  }
+  .info-hidden-large-screen {
+    display: none;
+  }
+  .info-hidden-small-screen {
+    display: flex;
+  }
+  .card-buttons {
+    flex-direction: row;
+    gap: 2rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -87,5 +213,13 @@ main {
   .user-profile-picture {
     width: 50px;
     height: 50px;
+  }
+  main {
+    flex-direction: row;
+    align-items: start;
+    margin-top: 4rem;
+  }
+  .edit-info-form {
+    min-width: 500px;
   }
 }

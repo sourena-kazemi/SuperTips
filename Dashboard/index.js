@@ -1,4 +1,4 @@
-function handleMenuButtonClick() {
+function handleSidebarButtonClick() {
   document
     .querySelector(".sidebar-menu")
     .classList.toggle("sidebar-menu-active")
@@ -24,5 +24,5 @@ function handleDropdownItemClick(itemSport, itemId) {
     document.querySelectorAll(`.${currentItem.sport}-league`)[
       currentItem.id - 1
     ].innerHTML
-  handleMenuButtonClick()
+  handleSidebarButtonClick()
 }
